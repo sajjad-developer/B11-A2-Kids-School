@@ -39,6 +39,16 @@
   justify-content: space-around;
 }
 
+.logo-heading {
+  margin-left: 11px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100%;
+}
+
 .menu {
   gap: 32px;
 }
@@ -46,6 +56,8 @@
 .menu,
 #menu-contact {
   font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu span a,
@@ -75,18 +87,28 @@
   width: 197px;
   height: 50px;
   border-radius: 12px;
+  border: none;
+}
+
+#menu-icon {
+  display: none;
 }
 
 @media screen and (max-width: 576px) {
+  .navbar-section {
+    justify-content: space-around;
+  }
+
   .logo-heading,
   .menu,
   #menu-contact {
     display: none;
   }
-  .navbar-section {
-    justify-content: left;
-  }
-  .menu-icon {
-    justify-content: right;
+
+  #menu-icon {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
