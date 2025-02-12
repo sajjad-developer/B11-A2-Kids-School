@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.primary-font-quicksand {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.secondary-font-raleway {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* shared styles */
+.primary-font-weight {
+  font-weight: 700;
+}
+
+.secondary-font-weight {
+  font-weight: 500;
+}
+
+.display-flex {
+  display: flex;
+  gap: 11px;
+}
+
+.display-grid {
+  display: grid;
+}
+
+/* navbar-section styles */
+.navbar-section {
+  justify-content: space-around;
+}
+
+.menu {
+  gap: 32px;
+}
+
+.menu,
+#menu-contact {
+  font-size: 1.25rem;
+}
+
+.menu span a,
+#menu-contact {
+  text-decoration: none;
+}
+
+#menu-home {
+  color: rgba(254, 163, 1, 1);
+}
+
+#menu-about {
+  color: rgba(1, 172, 253, 1);
+}
+
+#menu-facilities {
+  color: rgba(5, 212, 223, 1);
+}
+
+#menu-admission {
+  color: rgba(93, 88, 239, 1);
+}
+
+#menu-contact {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(254, 163, 1, 1);
+  width: 197px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 576px) {
+  .logo-heading,
+  .menu,
+  #menu-contact {
+    display: none;
+  }
+  .navbar-section {
+    justify-content: left;
+  }
+  .menu-icon {
+    justify-content: right;
+  }
+}
