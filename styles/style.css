@@ -150,6 +150,9 @@
 
 /* standard curriculum styles   */
 
+.read-more {
+  margin-top: 20px;
+}
 .start-standard-curriculum {
   margin-left: 95px;
   background-image: url(../assets/bg.png);
@@ -166,8 +169,27 @@
   gap: 28.29px;
 }
 
+.card-1 {
+  background-color: rgba(222, 245, 255, 1);
+}
+
 .common-card {
   border-radius: 18.86px;
+  width: 367.8px;
+  height: 476.78px;
+  border: 2px solid rgba(222, 245, 255, 1);
+  text-align: center;
+}
+.card-2 {
+  background-color: rgba(255, 244, 220, 1);
+}
+
+.card-3 {
+  background-color: rgba(242, 232, 255, 1);
+}
+
+text-description {
+  font-size: 1rem;
 }
 
 /* our story style  */
