@@ -148,6 +148,93 @@
   padding: 10px 47px;
 }
 
+/* standard curriculum styles   */
+
+.start-standard-curriculum {
+  margin-left: 95px;
+}
+
+.standard-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.standard-curriculum {
+  justify-content: space-around;
+  gap: 28.29px;
+}
+
+.common-card {
+  border-radius: 18.86px;
+}
+
+/* our story style  */
+
+.our-stories {
+  margin-left: 95px;
+}
+
+.November-19-2019 {
+  background-color: rgba(60, 216, 232, 1);
+  border-radius: 47.93px;
+  margin-bottom: 33.59px;
+  transform: translateY(-15px) translateX(15px);
+  color: rgba(255, 255, 255, 1);
+  width: 174.51px;
+  height: 47.93px;
+  border: none;
+}
+
+.com-col {
+  color: rgba(149, 178, 38, 1);
+}
+
+#dif {
+  color: rgba(93, 88, 240, 1);
+}
+
+.story-block {
+  display: flex;
+  gap: 19.17px;
+}
+
+.story-block-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 19.17px;
+}
+
+.view-all {
+  text-align: center;
+  margin: 90px 170px 60px 380px;
+}
+
+/* footer style */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.style-list {
+  color: rgba(255, 255, 255, 1);
+  list-style-type: none;
+}
+
+.logo-style {
+  display: flex;
+  margin-bottom: 35.35px;
+}
+
+.footer {
+  margin-left: 95px;
+}
+
 /* responsive for mobile devices */
 
 @media screen and (max-width: 576px) {
@@ -214,5 +301,32 @@
 
   .body-margin {
     margin: 0 0;
+  }
+
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .story-block {
+    flex-direction: column;
+  }
+
+  .story-block-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .standard-curriculum {
+    flex-direction: column;
+  }
+  .standard-curriculum image {
+    width: calc(100% - 8%);
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  .hide-card {
+    display: none;
   }
 }
