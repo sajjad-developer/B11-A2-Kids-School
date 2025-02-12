@@ -34,6 +34,11 @@
   display: grid;
 }
 
+/* body-margin styles */
+.body-margin {
+  margin: 0 2px;
+}
+
 /* navbar-section styles */
 .navbar-section {
   justify-content: space-around;
@@ -94,11 +99,58 @@
   display: none;
 }
 
-@media screen and (max-width: 576px) {
-  .navbar-section {
-    justify-content: space-around;
-  }
+/* banner-section styles */
+.banner-section {
+  width: 1158.61px;
+  height: 575px;
+  /* margin-left: 141px;
+  margin-right: 140.39px; */
+}
 
+.banner-section-text {
+  margin-top: 122px;
+  margin-bottom: 122px;
+  margin-left: 90px;
+}
+
+#Empowering {
+  color: rgba(254, 163, 1, 1);
+  font-size: 3.5rem;
+}
+
+#students-from-small,
+#age {
+  color: rgba(17, 17, 17, 1);
+  font-size: 3.5rem;
+  margin-right: 4.5px;
+}
+
+#towards-vision {
+  color: rgba(1, 172, 253, 1);
+  font-size: 3.5rem;
+}
+
+.banner-section-description {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: rgba(17, 17, 17, 1);
+}
+
+.enroll {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(17, 17, 17, 1);
+  border-radius: 12px;
+  border: none;
+  width: 197px;
+  height: 50px;
+  margin-top: 24px;
+  font-size: 1.25rem;
+  padding: 10px 47px;
+}
+
+/* responsive for mobile devices */
+
+@media screen and (max-width: 576px) {
   .logo-heading,
   .menu,
   #menu-contact {
@@ -110,5 +162,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .banner-section {
+    flex-direction: column;
+  }
+
+  .banner-section-text {
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+  }
+
+  .banner-section-heading,
+  #Empowering,
+  #students-from-small,
+  #age,
+  #towards-vision {
+    font-size: 0.8rem;
+    /* width: 357px;
+    height: 120px; */
+  }
+  .banner-section-description {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  #age {
+    margin-right: 0px;
+  }
+
+  .banner-section {
+    width: 357px;
+    height: 725px;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .width-responsive-img {
+    transform: scale(0.6) translateY(320px) translateX(-20px);
+  }
+  .banner-section-text {
+    transform: translateX(-20px);
+  }
+
+  .enroll {
+    width: 131px;
+    height: 42px;
+    font-size: 1rem;
+    padding: 6px 24px;
+    border-radius: 8px;
+  }
+
+  .body-margin {
+    margin: 0 0;
   }
 }
